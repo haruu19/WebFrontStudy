@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			table,th,td{
+				border: 1.5px solid black;
+				text-align: center;
+				border-collapse: collapse;
+			}
+			tr:nth-child(even){background-color: #f2f2f2;}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1 align="center">구구단 테이블 만들기</h1>
+		</div>
+		<div>
+			<table id='gugudan' align='center'></table>
+		</div>
+		<script>
+			var gugudan = document.getElementById('gugudan');
+			console.log(gugudan);
+			for(var i=2;i<10;i++){
+				var row = document.createElement('tr');
+				gugudan.appendChild(row);
+				var dan = document.createElement('td');
+				dan.innerHTML = i+" 단";
+				row.appendChild(dan);
+				for(var j=1;j<10;j++){
+					var cell = document.createElement('td');
+					cell.innerHTML = i+"X"+j+"="+i*j;
+					row.appendChild(cell);
+				}
+			}
+		</script>
+	</body>
+</html>

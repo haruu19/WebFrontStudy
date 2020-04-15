@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			function sum(){
+				var n1 = document.forms[0].n1.value;
+				var n2 = document.forms[0].n2.value;
+				var n3 = Number.parseInt(n1)+Number.parseInt(n2);
+				document.forms[0].result.value=n3;
+			}
+		</script>
+	</head>
+	<body>
+		<header align="center">정수의 덧셈결과 출력 예제입니다.</header><hr>
+		<form align="center">
+			정수 1: <input type="text" name="n1"> + 
+			정수 2: <input type="text" name="n2"> = 
+			<input type="text" name="result">
+			<button type="button"  onclick="sum()">계산하기</button>
+		</form>
+	</body>
+</html>
