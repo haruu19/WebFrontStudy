@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		/*
+			함수 호이스팅이란 ??
+				함수의 선언, 변수의 선언을 위로 끌어올린다.
+			
+			1. 함수가 중복되어 있다면 덮어쓰기
+			2. 변수가 중복되어 있다면 무시
+			3. 함수와 변수가 같이 호이스팅 대상이라면 함수부터 실행
+		*/
+		/* function f() {
+			console.log("1");
+		}
+		f();
+		var f = function () {
+			console.log("2")
+		} */
+		/* function f() {
+			console.log("1");
+		}
+		function f() {
+			console.log("2");
+		} */
+		
+	/* 	foo();
+		foo2();
+		function foo(){
+			console.log("foo")
+		}
+		var foo2 = function () {
+			console.log("foo2");
+		}; */
+		
+		/* function func(cb){
+			console.log(typeof cb)
+			cb()
+		}
+		function mycall(){
+			console.log("mycall 호출됨")
+		}
+		func(mycall)
+		func(mycall())
+		 */
+		/*  var data = 10;
+		alert(data)
+		
+		function func(){
+			var data = 20
+			alert(data)
+		}
+		func()
+		alert(data) */
+		/* var m = {f:'T',l:'L'}
+		console.log(m.f)
+		delete m.f;
+		m.f='W';
+		console.log(m.f) */
+		/* int k = 0;
+		var sum=k;
+		alert(sum) */
+		/* var n = 7
+		if(n=3){
+			console.log(n)
+		}else{
+			console.log(0)
+		} */
+		var str = "hello "
+		str += "SSAFY"
+		console.log(str)
+	</script>
+</body>
+</html>
