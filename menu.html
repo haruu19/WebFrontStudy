@@ -45,14 +45,14 @@
 			</div>
 			<div id = "main">
 				<h1 id="title">오늘의 메뉴 : 케이크 입니다.</h1>
-				<img id="menu" src="../img/cake.jpg">
+				<img id="menu" src="./img/cake.jpg">
 			</div>
 			<div id = "list">
 				<ul>
-					<li><a href = "#" onclick="selectMenu(0);"><img id="cake" src="../img/cake.jpg"></a></li>
-					<li><a href = "#" onclick="selectMenu(1);"><img id="burger" src="../img/burger.jpg"></a></li>
-					<li><a href = "#" onclick="selectMenu(2);"><img id="steak" src="../img/steak.jpg"></a></li>
-					<li><a href = "#" onclick="selectMenu(3);"><img id="sandwich" src="../img/sandwich.jpg"></a></li>
+					<li><a href = "#" onclick="selectMenu(0);"><img id="cake" src="./img/cake.jpg"></a></li>
+					<li><a href = "#" onclick="selectMenu(1);"><img id="burger" src="./img/burger.jpg"></a></li>
+					<li><a href = "#" onclick="selectMenu(2);"><img id="steak" src="./img/steak.jpg"></a></li>
+					<li><a href = "#" onclick="selectMenu(3);"><img id="sandwich" src="./img/sandwich.jpg"></a></li>
 				</ul>
 			</div>
 		</div>
@@ -63,7 +63,7 @@
 				}
 				if(num==0){
 					document.getElementById("title").innerHTML="오늘의 메뉴 : 케이크 입니다.";
-					document.getElementById("menu").setAttribute("src","../img/cake.jpg");
+					document.getElementById("menu").setAttribute("src","./img/cake.jpg");
 					document.getElementById("cake").style.border="5px solid #000000";
 					document.getElementById("burger").style.border="0px solid #000000";
 					document.getElementById("steak").style.border="0px solid #000000";
@@ -76,7 +76,7 @@
 				}
 				if(num==1){
 					document.getElementById("title").innerHTML="오늘의 메뉴 : 햄버거 입니다.";
-					document.getElementById("menu").setAttribute("src","../img/burger.jpg");
+					document.getElementById("menu").setAttribute("src","./img/burger.jpg");
 					document.getElementById("cake").style.border="0px solid #000000";
 					document.getElementById("burger").style.border="5px solid #000000";
 					document.getElementById("steak").style.border="0px solid #000000";
@@ -89,7 +89,7 @@
 				}
 				if(num==2){
 					document.getElementById("title").innerHTML="오늘의 메뉴 : 스테이크 입니다.";
-					document.getElementById("menu").setAttribute("src","../img/steak.jpg");
+					document.getElementById("menu").setAttribute("src","./img/steak.jpg");
 					document.getElementById("cake").style.border="0px solid #000000";
 					document.getElementById("burger").style.border="0px solid #000000";
 					document.getElementById("steak").style.border="5px solid #000000";
@@ -102,7 +102,7 @@
 				}
 				if(num==3){
 					document.getElementById("title").innerHTML="오늘의 메뉴 : 샌드위치 입니다.";
-					document.getElementById("menu").setAttribute("src","../img/sandwich.jpg");
+					document.getElementById("menu").setAttribute("src","./img/sandwich.jpg");
 					document.getElementById("cake").style.border="0px solid #000000";
 					document.getElementById("burger").style.border="0px solid #000000";
 					document.getElementById("steak").style.border="0px solid #000000";
