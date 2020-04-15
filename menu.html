@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			#container{
+				width: 800px;
+				background: #e6e6e6;
+				margin: 0 auto;
+				text-align: center;
+			}
+			#buttonArea{
+				width: 300px;
+				margin : 20px auto;
+				align-content: center;
+			}
+			#main{
+				width: 600px;
+				margin: 0 auto;
+			}
+			#main>img{
+				width: 200px;
+				height: 200px;
+				margin: 0 auto;
+			}
+			li{
+				display: inline;
+				padding: 20px;
+			}
+			li img{
+				width:100px;
+				height:100px;
+				
+			}
+			li img:hover{
+				opacity: 0.2;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id = "buttonArea">
+				<button onclick="selectMenu(-1);">랜덤 선택</button>
+			</div>
+			<div id = "main">
+				<h1 id="title">오늘의 메뉴 : 케이크 입니다.</h1>
+				<img id="menu" src="../img/cake.jpg">
+			</div>
+			<div id = "list">
+				<ul>
+					<li><a href = "#" onclick="selectMenu(0);"><img id="cake" src="../img/cake.jpg"></a></li>
+					<li><a href = "#" onclick="selectMenu(1);"><img id="burger" src="../img/burger.jpg"></a></li>
+					<li><a href = "#" onclick="selectMenu(2);"><img id="steak" src="../img/steak.jpg"></a></li>
+					<li><a href = "#" onclick="selectMenu(3);"><img id="sandwich" src="../img/sandwich.jpg"></a></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			function selectMenu(num){
+				if(num==-1){
+					num = Math.floor(Math.random()*4);
+				}
+				if(num==0){
+					document.getElementById("title").innerHTML="오늘의 메뉴 : 케이크 입니다.";
+					document.getElementById("menu").setAttribute("src","../img/cake.jpg");
+					document.getElementById("cake").style.border="5px solid #000000";
+					document.getElementById("burger").style.border="0px solid #000000";
+					document.getElementById("steak").style.border="0px solid #000000";
+					document.getElementById("sandwich").style.border="0px solid #000000";
+					
+					document.getElementById("cake").style.opacity="1";
+					document.getElementById("burger").style.opacity="0.2";
+					document.getElementById("steak").style.opacity="0.2";
+					document.getElementById("sandwich").style.opacity="0.2";
+				}
+				if(num==1){
+					document.getElementById("title").innerHTML="오늘의 메뉴 : 햄버거 입니다.";
+					document.getElementById("menu").setAttribute("src","../img/burger.jpg");
+					document.getElementById("cake").style.border="0px solid #000000";
+					document.getElementById("burger").style.border="5px solid #000000";
+					document.getElementById("steak").style.border="0px solid #000000";
+					document.getElementById("sandwich").style.border="0px solid #000000";
+					
+					document.getElementById("cake").style.opacity="0.2";
+					document.getElementById("burger").style.opacity="1";
+					document.getElementById("steak").style.opacity="0.2";
+					document.getElementById("sandwich").style.opacity="0.2";
+				}
+				if(num==2){
+					document.getElementById("title").innerHTML="오늘의 메뉴 : 스테이크 입니다.";
+					document.getElementById("menu").setAttribute("src","../img/steak.jpg");
+					document.getElementById("cake").style.border="0px solid #000000";
+					document.getElementById("burger").style.border="0px solid #000000";
+					document.getElementById("steak").style.border="5px solid #000000";
+					document.getElementById("sandwich").style.border="0px solid #000000";
+					
+					document.getElementById("cake").style.opacity="0.2";
+					document.getElementById("burger").style.opacity="0.2";
+					document.getElementById("steak").style.opacity="1";
+					document.getElementById("sandwich").style.opacity="0.2";
+				}
+				if(num==3){
+					document.getElementById("title").innerHTML="오늘의 메뉴 : 샌드위치 입니다.";
+					document.getElementById("menu").setAttribute("src","../img/sandwich.jpg");
+					document.getElementById("cake").style.border="0px solid #000000";
+					document.getElementById("burger").style.border="0px solid #000000";
+					document.getElementById("steak").style.border="0px solid #000000";
+					document.getElementById("sandwich").style.border="5px solid #000000";
+					
+					document.getElementById("cake").style.opacity="0.2";
+					document.getElementById("burger").style.opacity="0.2";
+					document.getElementById("steak").style.opacity="0.2";
+					document.getElementById("sandwich").style.opacity="1";
+				}
+			}
+		</script>
+	</body>
+</html>
